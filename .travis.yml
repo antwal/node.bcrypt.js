@@ -31,127 +31,17 @@ addons:
 # Apple Builds Matrix
 matrix:
   include:
-    - node_js: "4"
-      os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "5"
-      os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "6"
-      os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "7"
-      os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "8"
-      os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "0.8"
-      os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "0.10"
+    - node_js: "0.12"
       os: osx
       osx_image: xcode9
       env:
         - OS_NAME="Apple OSX 10.13 High Sierra"
     - node_js: "0.12"
       os: osx
-      osx_image: xcode9
-      env:
-        - OS_NAME="Apple OSX 10.13 High Sierra"
-    - node_js: "4"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "5"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "6"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "7"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "8"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "0.8"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "0.10"
-      os: osx
       osx_image: xcode8.3
       env:
         - OS_NAME="Apple OSX 10.12 Sierra"
     - node_js: "0.12"
-      os: osx
-      osx_image: xcode8.3
-      env:
-        - OS_NAME="Apple OSX 10.12 Sierra"
-    - node_js: "4"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "5"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "6"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "7"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "8"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "0.8"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "0.10"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "0.12"
-      os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "4"
       os: osx
       osx_image: xcode6.4
       env:
@@ -160,37 +50,17 @@ matrix:
       os: osx
       osx_image: xcode6.4
       env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
-    - node_js: "6"
-      os: osx
-      osx_image: xcode6.4
-      env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
-    - node_js: "7"
-      os: osx
-      osx_image: xcode6.4
-      env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
-    - node_js: "8"
-      os: osx
-      osx_image: xcode6.4
-      env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
+        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"  TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
     - node_js: "0.8"
       os: osx
       osx_image: xcode6.4
       env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
+        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"  TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
     - node_js: "0.10"
       os: osx
       osx_image: xcode6.4
       env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
-    - node_js: "0.12"
-      os: osx
-      osx_image: xcode6.4
-      env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
+        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"  TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
   allow_failures:
     - node_js: "0.12"
       os: osx
@@ -204,16 +74,6 @@ matrix:
         - OS_NAME="Apple OSX 10.12 Sierra"
     - node_js: "0.12"
       os: osx
-      osx_image: xcode8
-      env:
-        - OS_NAME="Apple OSX 10.11 El Capitan"
-    - node_js: "0.12"
-      os: osx
-      osx_image: xcode6.4
-      env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
-    - node_js: "4"
-      os: osx
       osx_image: xcode6.4
       env:
         - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite" TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
@@ -221,17 +81,17 @@ matrix:
       os: osx
       osx_image: xcode6.4
       env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
+        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"  TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
     - node_js: "0.8"
       os: osx
       osx_image: xcode6.4
       env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
+        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"  TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
     - node_js: "0.10"
       os: osx
       osx_image: xcode6.4
       env:
-        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"
+        - OS_NAME="Apple OSX 10.9 Mavericks / 10.10 Yosemite"  TEST_FIX="sudo ln -s /usr/lib/libSystem.B.dylib /usr/local/lib/libgcc_s.10.5.dylib"
 
 branches:
   only:
